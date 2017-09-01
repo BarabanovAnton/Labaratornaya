@@ -1,0 +1,6 @@
+c:\users\vsemp\documents\visual studio 2017\Projects\Labaratornaya6\Labaratornaya6\bin\Debug\Labaratornaya6.exe.config
+c:\users\vsemp\documents\visual studio 2017\Projects\Labaratornaya6\Labaratornaya6\bin\Debug\Labaratornaya6.exe
+c:\users\vsemp\documents\visual studio 2017\Projects\Labaratornaya6\Labaratornaya6\bin\Debug\Labaratornaya6.pdb
+c:\users\vsemp\documents\visual studio 2017\Projects\Labaratornaya6\Labaratornaya6\obj\Debug\Labaratornaya6.csprojResolveAssemblyReference.cache
+c:\users\vsemp\documents\visual studio 2017\Projects\Labaratornaya6\Labaratornaya6\obj\Debug\Labaratornaya6.exe
+c:\users\vsemp\documents\visual studio 2017\Projects\Labaratornaya6\Labaratornaya6\obj\Debug\Labaratornaya6.pdb
