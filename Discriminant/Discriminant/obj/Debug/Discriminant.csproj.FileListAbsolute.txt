@@ -1,0 +1,12 @@
+c:\users\vsemp\documents\visual studio 2017\Projects\Discriminant\Discriminant\bin\Debug\Discriminant.exe.config
+c:\users\vsemp\documents\visual studio 2017\Projects\Discriminant\Discriminant\bin\Debug\Discriminant.exe
+c:\users\vsemp\documents\visual studio 2017\Projects\Discriminant\Discriminant\bin\Debug\Discriminant.pdb
+c:\users\vsemp\documents\visual studio 2017\Projects\Discriminant\Discriminant\obj\Debug\Discriminant.csprojResolveAssemblyReference.cache
+c:\users\vsemp\documents\visual studio 2017\Projects\Discriminant\Discriminant\obj\Debug\Discriminant.exe
+c:\users\vsemp\documents\visual studio 2017\Projects\Discriminant\Discriminant\obj\Debug\Discriminant.pdb
+C:\Users\vsemp\Desktop\Labaratornaya\Discriminant\Discriminant\obj\Debug\Discriminant.csprojResolveAssemblyReference.cache
+C:\Users\vsemp\Desktop\Labaratornaya\Discriminant\Discriminant\obj\Debug\Discriminant.exe
+C:\Users\vsemp\Desktop\Labaratornaya\Discriminant\Discriminant\obj\Debug\Discriminant.pdb
+C:\Users\vsemp\Desktop\Labaratornaya\Discriminant\Discriminant\bin\Debug\Discriminant.exe.config
+C:\Users\vsemp\Desktop\Labaratornaya\Discriminant\Discriminant\bin\Debug\Discriminant.exe
+C:\Users\vsemp\Desktop\Labaratornaya\Discriminant\Discriminant\bin\Debug\Discriminant.pdb
