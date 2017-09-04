@@ -5,59 +5,44 @@
     using System.Diagnostics.CodeAnalysis;
 
     using static System.Math;
-    
+
     public class Program
     {
         public static void Main(string[] args)
         {
-                Console.Write("Введите значение a: ");
-                var a = inputDate();
-               /* var resultA = double.TryParse(Console.ReadLine(), out var a);
-                if (resultA == false)
-                {
-                    Console.WriteLine("Ошибка, введите число.");
-                }*/
+            Console.Write("Введите значение a: ");
+            var a = InputСoefficient();
 
-                Console.Write("Введите значение b: ");
-                var b = inputDate();
-                /*var resultB = double.TryParse(Console.ReadLine(), out var b);
-                if (resultB == false)
-                {
-                    Console.WriteLine("Ошибка, введите число.");
-                }*/
+            Console.Write("Введите значение b: ");
+            var b = InputСoefficient();
 
-                Console.Write("Введите значение с: ");
-                var c = inputDate();
-                /*var resultC = double.TryParse(Console.ReadLine(), out var c);
-                if (resultC == false)
-                {
-                    Console.WriteLine("Ошибка, введите число.");
-                }*/
+            Console.Write("Введите значение с: ");
+            var c = InputСoefficient();
 
-                var discr = Pow(b, 2) - 4 * a * c;
-                Console.WriteLine("Дискриминант равен: " + discr);
+            Console.WriteLine("Ваше уравнение: " + a + " *x^2 + " + b + " *x + " + c + " = 0");
 
-                if (discr > 0)
-                {
-                    var x1 = (-b - Sqrt(discr)) / (2 * a);
-                    var x2 = (-b + Sqrt(discr)) / (2 * a);
-                    Console.WriteLine("Первый корень равен: " + x1);
-                    Console.WriteLine("Второй корень равен: " + x2);
-                }
+            var discr = Pow(b, 2) - (4 * a * c);
+            Console.WriteLine("Дискриминант равен: " + discr);
 
-                else if (discr == 0)
-                {
-                    var x = -b / (2 * a);
-                    Console.WriteLine("Уравнение имеет один корень: " + x);
-                }
-
-                else
-                {
-                    Console.WriteLine("Уравнение не имеет корней.");
-                }
+            if (discr > 0)
+            {
+                var x1 = (-b - Sqrt(discr)) / (2 * a);
+                var x2 = (-b + Sqrt(discr)) / (2 * a);
+                Console.WriteLine("Первый корень равен: " + x1);
+                Console.WriteLine("Второй корень равен: " + x2);
+            }
+            else if (discr == 0)
+            {
+                var x = -b / (2 * a);
+                Console.WriteLine("Уравнение имеет один корень: " + x);
+            }
+            else
+            {
+                Console.WriteLine("Уравнение не имеет корней.");
+            }
         }
 
-        public static double inputDate()
+        public static double InputСoefficient()
         {
             while (true)
             {
@@ -65,10 +50,8 @@
                 {
                     return i;
                 }
-                else
-                {
-                    Console.Write("Ошибка, введите число: ");
-                }
+
+                Console.Write("Ошибка, введите число: ");
             }
         }
     }
