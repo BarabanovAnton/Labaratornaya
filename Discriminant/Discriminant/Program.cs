@@ -19,27 +19,31 @@
             Console.Write("Введите значение с: ");
             var c = InputСoefficient();
 
-            Console.WriteLine("Ваше уравнение: " + a + " *x^2 + " + b + " *x + " + c + " = 0");
+            if (a != 0 && b != 0 && c != 0)
+            {
+                Console.WriteLine("Ваше уравнение: " + a + " *x^2 + " + b + " *x + " + c + " = 0");
 
-            var discr = Pow(b, 2) - (4 * a * c);
-            Console.WriteLine("Дискриминант равен: " + discr);
+                var discr = Pow(b, 2) - (4 * a * c);
+                Console.WriteLine("Дискриминант равен: " + discr);
 
-            if (discr > 0)
-            {
-                var x1 = (-b - Sqrt(discr)) / (2 * a);
-                var x2 = (-b + Sqrt(discr)) / (2 * a);
-                Console.WriteLine("Первый корень равен: " + x1);
-                Console.WriteLine("Второй корень равен: " + x2);
+                if (discr > 0)
+                {
+                    var x1 = (-b - Sqrt(discr)) / (2 * a);
+                    var x2 = (-b + Sqrt(discr)) / (2 * a);
+                    Console.WriteLine("Первый корень равен: " + x1);
+                    Console.WriteLine("Второй корень равен: " + x2);
+                }
+                else if (discr == 0)
+                {
+                    var x = -b / (2 * a);
+                    Console.WriteLine("Уравнение имеет один корень: " + x);
+                }
+                else
+                {
+                    Console.WriteLine("Уравнение не имеет корней.");
+                }
             }
-            else if (discr == 0)
-            {
-                var x = -b / (2 * a);
-                Console.WriteLine("Уравнение имеет один корень: " + x);
-            }
-            else
-            {
-                Console.WriteLine("Уравнение не имеет корней.");
-            }
+            Console.WriteLine("Вы ввели только нули, попытайтесь ещё раз.");
         }
 
         public static double InputСoefficient()
