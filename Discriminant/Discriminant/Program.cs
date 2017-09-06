@@ -18,8 +18,8 @@
 
             Console.Write("Введите значение с: ");
             var c = InputСoefficient();
-
-            if (a != 0 && b != 0 && c != 0)
+            if (a == 0 && b == 0 && c == 0) Console.WriteLine("Вы ввели только нули, попытайтесь ещё раз.");
+            else
             {
                 Console.WriteLine("Ваше уравнение: " + a + " *x^2 + " + b + " *x + " + c + " = 0");
 
@@ -43,7 +43,6 @@
                     Console.WriteLine("Уравнение не имеет корней.");
                 }
             }
-            Console.WriteLine("Вы ввели только нули, попытайтесь ещё раз.");
         }
 
         public static double InputСoefficient()
