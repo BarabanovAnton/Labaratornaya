@@ -1,0 +1,6 @@
+C:\Users\vsemp\Desktop\Лабы\Work_with_file_and_string\Work_with_file_and_string\bin\Debug\Work_with_file_and_string.exe.config
+C:\Users\vsemp\Desktop\Лабы\Work_with_file_and_string\Work_with_file_and_string\bin\Debug\Work_with_file_and_string.exe
+C:\Users\vsemp\Desktop\Лабы\Work_with_file_and_string\Work_with_file_and_string\bin\Debug\Work_with_file_and_string.pdb
+C:\Users\vsemp\Desktop\Лабы\Work_with_file_and_string\Work_with_file_and_string\obj\Debug\Work_with_file_and_string.csprojResolveAssemblyReference.cache
+C:\Users\vsemp\Desktop\Лабы\Work_with_file_and_string\Work_with_file_and_string\obj\Debug\Work_with_file_and_string.exe
+C:\Users\vsemp\Desktop\Лабы\Work_with_file_and_string\Work_with_file_and_string\obj\Debug\Work_with_file_and_string.pdb
