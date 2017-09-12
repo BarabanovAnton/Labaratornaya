@@ -1,4 +1,4 @@
-﻿namespace Work_with_file_and_string
+﻿namespace WorkFiles
 {
     using System;
     using System.IO;
@@ -10,31 +10,30 @@
         public static void Main(string[] args)
         {
             var contentA = File.ReadAllText(@"C:\Users\vsemp\Desktop\example1.txt", Encoding.Default);
-            //Console.WriteLine(contentA);
             var contentB = File.ReadAllText(@"C:\Users\vsemp\Desktop\example2.txt", Encoding.Default);
-            //Console.WriteLine(contentB);
             var contentC = File.ReadAllText(@"C:\Users\vsemp\Desktop\example3.txt", Encoding.Default);
-            //Console.WriteLine(contentC);
-            var contentAll = contentA + " " + contentB + " " + contentC;
-            contentAll = contentAll.ToLower();
+            var contentAll = (contentA + " " + contentB + " " + contentC).ToLower();
             Console.WriteLine("Ваша строка: " + contentAll);
-             
 
-            string[] array = contentAll.Split(new char[] { ',', ' ' });
-
-            /*foreach (var a in array)
-            {
-                Console.WriteLine(a);
-            }*/
+            string[] arrayCharacters = WorkWithSplit(contentAll);
 
             Console.WriteLine("Ваш массив: ");
-            for (var i = 0; i < array.Length; i++)
+            for (var i = 0; i < arrayCharacters.Length; i++)
             {
-                Console.WriteLine(array[i]);
+                Console.WriteLine(arrayCharacters[i]);
             }
 
-            var countWord = array.Distinct().Count();
+            var countWord = arrayCharacters.Distinct().Count();
             Console.WriteLine("Количество неповторяющихся элементов: " + countWord);
+        }
+
+        public static string[] WorkWithSplit(string contentAll)
+        {
+            var arrayCharactersSplit
+                = contentAll.Split(
+                new char[] { ',', ' ', '-', ';', '/' }, 
+                StringSplitOptions.RemoveEmptyEntries);
+            return arrayCharactersSplit;
         }
     }
 }
