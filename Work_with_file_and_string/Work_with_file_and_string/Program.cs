@@ -6,27 +6,27 @@
     using System.Linq;
     using System.Text;
 
-    class Program
+    public class Program
     {
         public static void Main(string[] args)
         {
-            var contentA = File.ReadAllText(@"C:\Users\vsemp\Desktop\example1.txt", Encoding.Default);
-            var contentB = File.ReadAllText(@"C:\Users\vsemp\Desktop\example2.txt", Encoding.Default);
-            var contentC = File.ReadAllText(@"C:\Users\vsemp\Desktop\example3.txt", Encoding.Default);
-            var contentAll = (contentA + " " + contentB + " " + contentC).ToLower();
-            Console.WriteLine("Ваша строка: " + contentAll);
+            var inputContante1 = File.ReadAllText("Dates/example1.txt");
+            var inputContante2 = File.ReadAllText("Dates/example2.txt");
+            var inputContante3 = File.ReadAllText("Dates/example3.txt");
+            var inputContanteAll = (inputContante1 + " " + inputContante2 + " " + inputContante3).ToLower();
+            Console.WriteLine("Ваша строка: " + inputContanteAll);
 
-            string[] arrayCharacters = WorkWithSplit(contentAll);
+            var words = SplitStringWords(inputContanteAll);
 
             Console.Write("Ваш массив: ");
-            for (var i = 0; i < arrayCharacters.Length; i++)
+            foreach (var word in words)
             {
-                Console.Write(arrayCharacters[i] + " ");
+                Console.Write(word + " ");
             }
 
             Console.WriteLine(" ");
 
-            var uniqueWords = FindingUniqueWords(arrayCharacters);
+            var uniqueWords = FindUniqueWords(words);
 
             Console.Write("Уникальные слова: ");
             foreach (var uniqueWord in uniqueWords)
@@ -38,16 +38,16 @@
             Console.WriteLine("Количество неповторяющихся элементов: " + uniqueWords.Count());
         }
 
-        public static string[] WorkWithSplit(string contentAll)
+        public static string[] SplitStringWords(string contentAll)
         {
-            var arrayCharactersSplit
+            var words
                 = contentAll.Split(
-                new char[] { ',', ' ', '-', ';', '/' }, 
+                new string[] { ",", " ", "-", ";", "/", "/r", "/n" }, 
                 StringSplitOptions.RemoveEmptyEntries);
-            return arrayCharactersSplit;
+            return words;
         }
 
-        public static string[] FindingUniqueWords(string[] arrayCharacters)
+        public static string[] FindUniqueWords(string[] arrayCharacters)
         {
             var uniqueWords = arrayCharacters.Distinct().ToArray();
             return uniqueWords;
