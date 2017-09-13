@@ -1,6 +1,7 @@
 ﻿namespace WorkFiles
 {
     using System;
+    using System.Collections.Generic;
     using System.IO;
     using System.Linq;
     using System.Text;
@@ -17,14 +18,24 @@
 
             string[] arrayCharacters = WorkWithSplit(contentAll);
 
-            Console.WriteLine("Ваш массив: ");
+            Console.Write("Ваш массив: ");
             for (var i = 0; i < arrayCharacters.Length; i++)
             {
-                Console.WriteLine(arrayCharacters[i]);
+                Console.Write(arrayCharacters[i] + " ");
             }
 
-            var countWord = arrayCharacters.Distinct().Count();
-            Console.WriteLine("Количество неповторяющихся элементов: " + countWord);
+            Console.WriteLine(" ");
+
+            var uniqueWords = FindingUniqueWords(arrayCharacters);
+
+            Console.Write("Уникальные слова: ");
+            foreach (var uniqueWord in uniqueWords)
+            {
+                Console.Write(uniqueWord + " ");
+            }
+
+            Console.WriteLine(" ");
+            Console.WriteLine("Количество неповторяющихся элементов: " + uniqueWords.Count());
         }
 
         public static string[] WorkWithSplit(string contentAll)
@@ -34,6 +45,12 @@
                 new char[] { ',', ' ', '-', ';', '/' }, 
                 StringSplitOptions.RemoveEmptyEntries);
             return arrayCharactersSplit;
+        }
+
+        public static string[] FindingUniqueWords(string[] arrayCharacters)
+        {
+            var uniqueWords = arrayCharacters.Distinct().ToArray();
+            return uniqueWords;
         }
     }
 }
