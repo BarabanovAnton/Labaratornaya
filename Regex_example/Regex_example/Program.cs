@@ -10,7 +10,9 @@
     {
         public static void Main(string[] args)
         {
-            var pattern = @"\d{0,4}\+\d{0,4}\=\d{0,6}";
+            Console.Write("Введите выражение: ");
+
+            var pattern = @"\d+\,?\d*\s*\+?\-?\*?\:?\s*\d+\,?\d*\s*\=\s*\d+\,?\d*";
             var inputExpression = Console.ReadLine();
 
             if (Regex.IsMatch(inputExpression, pattern))

@@ -4,3 +4,9 @@ C:\Users\vsemp\Desktop\Лабы\Regex_example\Regex_example\bin\Debug\Regex_exam
 C:\Users\vsemp\Desktop\Лабы\Regex_example\Regex_example\obj\Debug\Regex_example.csprojResolveAssemblyReference.cache
 C:\Users\vsemp\Desktop\Лабы\Regex_example\Regex_example\obj\Debug\Regex_example.exe
 C:\Users\vsemp\Desktop\Лабы\Regex_example\Regex_example\obj\Debug\Regex_example.pdb
+C:\Users\vsemp\Desktop\Labaratornaya\Regex_example\Regex_example\bin\Debug\Regex_example.exe.config
+C:\Users\vsemp\Desktop\Labaratornaya\Regex_example\Regex_example\bin\Debug\Regex_example.exe
+C:\Users\vsemp\Desktop\Labaratornaya\Regex_example\Regex_example\bin\Debug\Regex_example.pdb
+C:\Users\vsemp\Desktop\Labaratornaya\Regex_example\Regex_example\obj\Debug\Regex_example.csprojResolveAssemblyReference.cache
+C:\Users\vsemp\Desktop\Labaratornaya\Regex_example\Regex_example\obj\Debug\Regex_example.exe
+C:\Users\vsemp\Desktop\Labaratornaya\Regex_example\Regex_example\obj\Debug\Regex_example.pdb
